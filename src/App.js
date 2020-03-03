@@ -9,7 +9,7 @@ import Navbar from "react-bootstrap/Navbar";
 const BaseLayout = () => (
   <div>
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Navbar.Brand href="/">Actions</Navbar.Brand>
+      <Navbar.Brand href="/">Actions v2</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     </Navbar>
 

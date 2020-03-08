@@ -4,4 +4,4 @@ WORKDIR /code
 COPY . ./
 
 RUN npm install
-CMD ["npm", "start"]
+CMD ["ng", "serve"]

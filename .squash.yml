@@ -1,5 +1,6 @@
+ 
 deployments:
   default:
-    port_forwarding: 80:3000
+    port_forwarding: 80:4200
     filename: Dockerfile
     dockerfileonly: true

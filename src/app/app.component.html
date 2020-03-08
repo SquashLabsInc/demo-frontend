@@ -1,0 +1,36 @@
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-dark border-bottom shadow-sm">
+  <h5 class="my-0 mr-md-auto font-weight-normal"><img src="https://www.squash.io/wp-content/uploads/2019/03/logo.svg" alt="" width="157" height="22" title="Squash" class="blog-hide"/></h5>
+  <nav class="my-2 my-md-0 mr-md-3 nav-custom">
+    <a routerLinkActive="active" routerLink="/create-task">ADD TODO</a>
+    <a routerLinkActive="active" routerLink="/">HOME</a>
+  </nav>
+  
+</div>
+
+<div class="container">
+  <!-- Employee list -->
+  <table class="table table-bordered" *ngIf="Tasks.length > 0">
+    <thead class="table-success bg-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col center">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let task of Tasks; let i = index">
+        <th scope="row">{{task.id}}</th>
+        <td>{{task.name}}</td>
+        <td>{{task.description}}</td>
+        <td class="text-center edit-block">
+          <span class="delete" (click)="removeTask(task, i)">
+            <button type="button" class="fa fa-trash"></button>
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<router-outlet></router-outlet>

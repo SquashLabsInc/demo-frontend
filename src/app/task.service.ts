@@ -10,7 +10,7 @@ export class TaskService {
 
   constructor(private http: HttpClient) { }
 
-  baseUri:string = 'http://18.217.89.199/api';
+  baseUri:string = 'http://18.222.134.75/api';
   headers = new HttpHeaders().set('Content-Type', 'application/json');
 
   createTask(data) : Observable <any> {

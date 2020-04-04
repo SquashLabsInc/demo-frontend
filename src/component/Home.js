@@ -3,7 +3,7 @@ import { Form, Button } from "react-bootstrap";
 import axios from 'axios';
 
 const instance =  axios.create({
-    baseURL: 'http://18.222.134.75/api'
+    baseURL: 'http://localhost:8080/api'
 });
 
 class Home extends Component {

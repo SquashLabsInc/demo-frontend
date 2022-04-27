@@ -1,5 +1,6 @@
 deployments:
   default:
     port_forwarding: 80:3000
+    auto_deploy_on_commits: true
     filename: Dockerfile
     dockerfileonly: true
